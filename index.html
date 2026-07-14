@@ -8,8 +8,9 @@
       name="description"
       content="Protocolo Tendões Livres: rotina prática de 5 minutos por dia para músicos reduzirem tensões ao tocar em 21 dias."
     />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="assets/hero-tendao-inflamado.webp" fetchpriority="high" />
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
   </head>
   <body>
     <header class="hero" id="topo">
@@ -22,8 +23,11 @@
           </h1>
           <img
             class="hero-inline-image"
-            src="assets/hero-tendao-inflamado.png"
+            src="assets/hero-tendao-inflamado.webp"
             alt="Explicação visual de tendão inflamado no punho"
+            width="760"
+            height="535"
+            fetchpriority="high"
           />
           <p class="hero-subtitle">
             Em apenas 21 dias, com uma rotina prática de 5 minutos por dia, criada
@@ -36,8 +40,11 @@
 
         <div class="hero-visual" aria-label="Músico tocando guitarra">
           <img
-            src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=85"
+            src="assets/antes-depois-musico.webp"
             alt="Músico tocando guitarra em um palco escuro"
+            width="900"
+            height="600"
+            decoding="async"
           />
         </div>
       </section>
@@ -53,8 +60,12 @@
         <div class="journey-story">
           <article class="story-step">
             <img
-              src="assets/marina-infancia.png"
+              src="assets/marina-infancia.webp"
               alt="Marina Valença criança segurando um instrumento"
+              width="760"
+              height="1174"
+              loading="lazy"
+              decoding="async"
             />
             <div class="story-copy">
               <span>01</span>
@@ -69,8 +80,12 @@
 
           <article class="story-step">
             <img
-              src="assets/marina-fisioterapeuta.png"
+              src="assets/marina-fisioterapeuta.webp"
               alt="Marina Valença fisioterapeuta em consultório"
+              width="760"
+              height="832"
+              loading="lazy"
+              decoding="async"
             />
             <div class="story-copy">
               <span>02</span>
@@ -86,8 +101,12 @@
 
           <article class="story-step">
             <img
-              src="assets/protocolo-mockup.png"
+              src="assets/protocolo-mockup.webp"
               alt="Mockup do Protocolo Tendões Livres em computador e celular"
+              width="900"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
             <div class="story-copy">
               <span>03</span>
@@ -192,7 +211,7 @@
         <div class="pain-map">
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-dedos.png" alt="Ilustração de dor nos dedos" />
+              <img src="assets/dor-dedos.webp" alt="Ilustração de dor nos dedos" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor nos dedos</h3>
             </div>
             <p>Rigidez, sensibilidade e perda de precisão ao pressionar cordas, teclas ou chaves.</p>
@@ -201,7 +220,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-punho.png" alt="Ilustração de dor no punho" />
+              <img src="assets/dor-punho.webp" alt="Ilustração de dor no punho" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor no punho</h3>
             </div>
             <p>Peso, pontadas ou queimação que aparecem no ensaio e podem incomodar em tarefas simples.</p>
@@ -210,7 +229,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-punho.png" alt="Ilustração de tensão no antebraço e punho" />
+              <img src="assets/dor-punho.webp" alt="Ilustração de tensão no antebraço e punho" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor no antebraço</h3>
             </div>
             <p>Sensação de dureza, cansaço e perda de leveza durante passagens mais longas.</p>
@@ -219,7 +238,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-ombro.png" alt="Ilustração de dor no ombro" />
+              <img src="assets/dor-ombro.webp" alt="Ilustração de dor no ombro" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor no ombro</h3>
             </div>
             <p>O ombro endurece, você muda de posição e a concentração sai da música.</p>
@@ -228,7 +247,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-pescoco.png" alt="Ilustração de dor no pescoço" />
+              <img src="assets/dor-pescoco.webp" alt="Ilustração de dor no pescoço" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor no pescoço</h3>
             </div>
             <p>A nuca trava e virar a cabeça começa a incomodar depois da prática.</p>
@@ -237,7 +256,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-costas.png" alt="Ilustração de dor nas costas" />
+              <img src="assets/dor-costas.webp" alt="Ilustração de dor nas costas" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Dor nas costas</h3>
             </div>
             <p>Ficar sentado ou em pé se torna difícil quando o ensaio passa de alguns minutos.</p>
@@ -246,7 +265,7 @@
           </article>
           <article>
             <div class="pain-card-head">
-              <img src="assets/dor-dedos.png" alt="Ilustração de desconforto nos dedos" />
+              <img src="assets/dor-dedos.webp" alt="Ilustração de desconforto nos dedos" width="240" height="219" loading="lazy" decoding="async" />
               <h3>Formigamento</h3>
             </div>
             <p>Os dedos parecem falhar, a força diminui e o medo de continuar aumenta.</p>
@@ -259,8 +278,12 @@
       <section class="section image-band">
         <img
           class="comparison-image"
-          src="assets/antes-depois-musico.png"
+          src="assets/antes-depois-musico.webp"
           alt="Comparativo de músico tocando com tensão e depois com mais conforto"
+          width="900"
+          height="600"
+          loading="lazy"
+          decoding="async"
         />
         <div>
           <p class="eyebrow">O que muda</p>
@@ -328,31 +351,31 @@
         </div>
         <div class="module-grid">
           <article class="main-module">
-            <img class="module-image" src="assets/produto-principal.png" alt="Área de membros do Protocolo Tendões Livres" />
+            <img class="module-image" src="assets/produto-principal.webp" alt="Área de membros do Protocolo Tendões Livres" width="760" height="507" loading="lazy" decoding="async" />
             <span>Produto principal • R$97,00</span>
             <h3>Protocolo Tendões Livres personalizado para o seu caso</h3>
             <p>Uma sequência prática para preparar, proteger e recuperar as regiões que mais sofrem quando você toca.</p>
           </article>
           <article>
-            <img class="module-image" src="assets/bonus-postura-sem-fundo.png" alt="Guia da Postura Instrumental" />
+            <img class="module-image" src="assets/bonus-postura-sem-fundo.webp" alt="Guia da Postura Instrumental" width="760" height="507" loading="lazy" decoding="async" />
             <span>Bônus 1 • R$67,00</span>
             <h3>Guia da Postura Instrumental</h3>
             <p>Aprenda a posicionar corretamente mãos, punhos, braços, ombros e coluna para reduzir a sobrecarga enquanto toca.</p>
           </article>
           <article>
-            <img class="module-image" src="assets/bonus-sono-sem-fundo.png" alt="Sono Reparador do Músico" />
+            <img class="module-image" src="assets/bonus-sono-sem-fundo.webp" alt="Sono Reparador do Músico" width="760" height="507" loading="lazy" decoding="async" />
             <span>Bônus 2 • R$47,00</span>
             <h3>Sono Reparador do Músico</h3>
             <p>Descubra posições e hábitos noturnos que favorecem a recuperação corporal e evitam aumentar a tensão em regiões já sobrecarregadas.</p>
           </article>
           <article>
-            <img class="module-image" src="assets/bonus-checklist-sem-fundo.png" alt="Checklist Músico Sem Tensão" />
+            <img class="module-image" src="assets/bonus-checklist-sem-fundo.webp" alt="Checklist Músico Sem Tensão" width="760" height="507" loading="lazy" decoding="async" />
             <span>Bônus 3 • R$29,00</span>
             <h3>Checklist Músico Sem Tensão</h3>
             <p>Um checklist rápido para conferir postura, aquecimento, pausas e recuperação antes, durante e depois de tocar.</p>
           </article>
           <article>
-            <img class="module-image" src="assets/bonus-grupo-vip-sem-fundo.png" alt="Grupo VIP Tira-Dúvidas" />
+            <img class="module-image" src="assets/bonus-grupo-vip-sem-fundo.webp" alt="Grupo VIP Tira-Dúvidas" width="760" height="507" loading="lazy" decoding="async" />
             <span>Bônus 4 • R$19,00</span>
             <h3>Grupo VIP Tira-Dúvidas</h3>
             <p>Entre para uma comunidade exclusiva de instrumentistas, compartilhe sua evolução e tire dúvidas sobre a aplicação do protocolo.</p>
@@ -411,7 +434,7 @@
             protocolo não é para você, solicite o reembolso dentro do prazo de garantia.
           </p>
         </div>
-        <img class="seal-image" src="assets/selo-garantia-30-dias-sem-fundo.png" alt="Selo de garantia de 30 dias" />
+        <img class="seal-image" src="assets/selo-garantia-30-dias-sem-fundo.webp" alt="Selo de garantia de 30 dias" width="260" height="260" loading="lazy" decoding="async" />
       </section>
 
       <section class="section faq">
@@ -453,13 +476,6 @@
       <a href="#topo">Voltar ao topo</a>
     </footer>
 
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
     <script src="script.js"></script>
   </body>
 </html>
