@@ -109,12 +109,11 @@ h1 span {
 
 .hero-inline-image {
   width: min(100%, 620px);
-  aspect-ratio: 16 / 10.5;
-  object-fit: contain;
+  height: auto;
   margin: 0 0 22px;
   border-radius: 8px;
   border: 1px solid var(--line);
-  background: #08090a;
+  background: transparent;
 }
 
 h2 {
@@ -224,11 +223,10 @@ h3 {
 
 .story-step img {
   width: 100%;
-  aspect-ratio: 4 / 4.2;
-  object-fit: contain;
+  height: auto;
   border-radius: 8px;
   border: 1px solid var(--line);
-  background: #08090a;
+  background: transparent;
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.42);
 }
 
@@ -237,7 +235,7 @@ h3 {
 }
 
 .story-step:nth-child(3) img {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: auto;
 }
 
 .story-copy {
@@ -379,8 +377,7 @@ blockquote,
 
 .module-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  height: auto;
   margin-bottom: 16px;
   border-radius: 8px;
   border: 1px solid rgba(246, 207, 75, 0.22);
@@ -506,16 +503,13 @@ blockquote,
 
 .image-band img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
   border: 1px solid var(--line);
 }
 
 .image-band img.comparison-image {
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
-  background: #08090a;
+  background: transparent;
 }
 
 .benefit-list {
@@ -706,7 +700,7 @@ footer a {
   }
 
   .module-image {
-    max-height: 180px;
+    max-height: none;
   }
 
   .anchor-title {
@@ -806,7 +800,7 @@ footer a {
 
   .hero-inline-image {
     width: 100%;
-    max-height: 220px;
+    max-height: none;
     margin-bottom: 18px;
   }
 
@@ -837,12 +831,6 @@ footer a {
 
   .story-step {
     gap: 14px;
-  }
-
-  .story-step img,
-  .story-step:first-child img,
-  .story-step:nth-child(3) img {
-    aspect-ratio: 4 / 3.65;
   }
 
   .story-copy {
@@ -880,10 +868,6 @@ footer a {
 
   .cycle span {
     min-height: 62px;
-  }
-
-  .image-band img {
-    aspect-ratio: 16 / 10;
   }
 
   .offer {

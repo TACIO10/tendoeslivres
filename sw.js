@@ -1,4 +1,4 @@
-const CACHE_NAME = "tendoes-livres-v2";
+const CACHE_NAME = "tendoes-livres-v3";
 const ASSETS = [
   "./",
   "./index.html",
